@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LANpnQk6sf4U59w00zHoKG2mUU7PfYE2yLMoM0N6Xvlz8ql+f2U72u8+fDe4JYCeBndFX2dR5UIDh4rl77oqqg==",
+  "dgSpecHash": "cv7infECzoIXn2LPdRiLE6JPICtO3BHuIIqmP2wKaS4WtliFZjYIpLRVY7H/9TqWClNNq3ix7BajCrhf8FXw7g==",
   "success": true,
   "projectFilePath": "/Users/macbookpro/Documents/Master GL/ASP.NET/ApiAspNetCore/ApiAspNetCore/ApiAspNetCore.csproj",
   "expectedPackageFiles": [
     "/Users/macbookpro/.nuget/packages/microsoft.entityframeworkcore/5.0.9/microsoft.entityframeworkcore.5.0.9.nupkg.sha512",
     "/Users/macbookpro/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.9/microsoft.entityframeworkcore.abstractions.5.0.9.nupkg.sha512",
     "/Users/macbookpro/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.9/microsoft.entityframeworkcore.analyzers.5.0.9.nupkg.sha512",
+    "/Users/macbookpro/.nuget/packages/microsoft.entityframeworkcore.inmemory/5.0.9/microsoft.entityframeworkcore.inmemory.5.0.9.nupkg.sha512",
     "/Users/macbookpro/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "/Users/macbookpro/.nuget/packages/microsoft.extensions.caching.memory/5.0.0/microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "/Users/macbookpro/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.2/microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",

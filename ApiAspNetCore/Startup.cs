@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using ApiAspNetCore.Model;
 
 namespace ApiAspNetCore
 {
@@ -25,6 +27,7 @@ namespace ApiAspNetCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<ProduitContext>(opt => opt.UseInMemoryDatabase("ProduitList"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
