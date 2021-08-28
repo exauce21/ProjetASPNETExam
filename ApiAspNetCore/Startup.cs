@@ -9,7 +9,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.EntityFrameworkCore;
 using ApiAspNetCore.Model;
 
 namespace ApiAspNetCore
@@ -27,7 +26,11 @@ namespace ApiAspNetCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<ProduitContext>(opt => opt.UseInMemoryDatabase("ProduitList"));
+            services.AddDbContext<ProduitContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("dbProduit"));
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +39,8 @@ namespace ApiAspNetCore
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                //app.UseSwagger();
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoApi v1"));
             }
 
             app.UseRouting();
